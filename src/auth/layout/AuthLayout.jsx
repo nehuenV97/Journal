@@ -20,10 +20,13 @@ export const AuthLayout = ({ children, title = '' }) => {
               borderRadius: 2 
           }}
         >
+          <Typography variant="h6">Mail de prueba</Typography>
+          <Typography sx={{ color: `yellow` }}>correo: nehuen@google.com</Typography>
+          <Typography sx={{ color: `yellow` }}>contraseña: nehuen1234</Typography>
 
-            <Typography variant="h5" sx={{ mb: 1 }}>{ title }</Typography>
-
-            { children }
+          <Typography variant="h5" sx={{ mb: 1, mt: 2 }}>{ title }</Typography>
+          
+          { children }
 
         </Grid>
     

@@ -9,6 +9,7 @@ import 'sweetalert2/dist/sweetalert2.css'
 import { ImageGallery } from "../components"
 import { useForm } from "../../hooks/useForm"
 import { setActiveNote, startDeletingNote, startSaveNote, startUploadingFiles } from "../../store/journal"
+// import moment from "moment"
 
 export const NoteView = () => {
 
@@ -60,6 +61,7 @@ export const NoteView = () => {
     >
         <Grid item>
             <Typography fontSize={ 39 } fontWeight='light'>{ dateString }</Typography>
+            {/* <Typography fontSize={ 39 } fontWeight='light'>{ moment().format('LLLL') }</Typography> */}
         </Grid>
 
         <Grid item>
